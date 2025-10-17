@@ -33,17 +33,16 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/posts">
               게시글
             </Nav.Link>
-
+            {/* 파일 업로드 추가 */}
+            <Nav.Link as={Link} to="/upload">
+                  파일 업로드
+            </Nav.Link>{" "}  
             {/* user 객체가 있으면(로그인 상태) 글쓰기 메뉴 표시 */}
             {user && (
               <>
                 <Nav.Link as={Link} to="/write">
                   글쓰기
                 </Nav.Link>
-                 {/* 파일 업로드 추가 */}
-                <Nav.Link as={Link} to="/upload">
-                  파일 업로드
-                </Nav.Link>{" "}               
               </>
             )}
           </Nav>
