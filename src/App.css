@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+
+/* 기본 여백 설정 */
+.container {
+  min-height: calc(100vh - 56px);
+  padding-top: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* 로딩 스피너 중앙 정렬 */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
 }
 
-@keyframes logo-spin {
+/* 테이블 스타일 개선 */
+.table {
+  margin-top: 20px;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+/* 폼 간격 조정 */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* 버튼 간격 */
+.d-flex.gap-2 {
+  gap: 10px;
+}
+
+/* 카드 그림자 효과 */
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Alert 메시지 애니메이션 */
+.alert {
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
