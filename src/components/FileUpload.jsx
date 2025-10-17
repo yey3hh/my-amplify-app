@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const FileUpload = () => {
   // S3 버킷 정보 
-  const S3_BUCKET = 'joy9-project-files'; // 여기에 자신의 실제 버킷 이름 입력
+  const S3_BUCKET = 'yeh66-project-files'; // 여기에 자신의 실제 버킷 이름 입력
   const S3_REGION = 'ap-northeast-2';
   const S3_URL = `https://${S3_BUCKET}.s3.${S3_REGION}.amazonaws.com`;
 
